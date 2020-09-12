@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { Task5Component } from './task5/task5.component';
 import { Task5ChildComponent } from './task5/task5-child/task5-child.component';
 import { Task3Component } from './task3/task3.component';
+import { Task6Component } from './task6/task6.component';
+import { ChangeColorDirective } from './task6/change-color.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     Task5Component,
     Task5ChildComponent,
-    Task3Component
+    Task3Component,
+    Task6Component,
+    ChangeColorDirective
   ],
   imports: [
     BrowserModule,
