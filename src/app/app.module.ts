@@ -12,6 +12,7 @@ import { Task4Component } from './task4/task4.component';
 import { Task1Component } from './task1/task1.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Task7Component } from './task7/task7.component';
+import { Task8Component } from './task8/task8.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Task7Component } from './task7/task7.component';
     ChangeColorDirective,
     Task4Component,
     Task1Component,
-    Task7Component
+    Task7Component,
+    Task8Component
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,28 @@
+<p>task8 works!</p>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm.value)">
+  
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+  
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+  
+    <label>
+      Nick:
+      <input type="text" formControlName="nick">
+    </label>
+
+    <button class="button" type="submit">Submit</button> 
+  
+</form>
+
+<ul *ngIf="user">
+    <li>First Name: {{ user.firstName }}</li>
+    <li>Last Name: {{ user.lastName }}</li>
+    <li>Nick: {{ user.nick }}</li>
+</ul>

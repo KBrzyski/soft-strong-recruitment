@@ -6,6 +6,7 @@ import { Task4Component } from '../app/task4/task4.component';
 import { Task5Component } from '../app/task5/task5.component';
 import { Task6Component } from '../app/task6/task6.component';
 import { Task7Component } from '../app/task7/task7.component';
+import { Task8Component } from '../app/task8/task8.component';
 
 const routes: Routes = [
   { path: 'task1', component: Task1Component },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'task4', component: Task4Component },
   { path: 'task5', component: Task5Component },
   { path: 'task6', component: Task6Component },
-  { path: 'task7', component: Task7Component }
+  { path: 'task7', component: Task7Component },
+  { path: 'task8', component: Task8Component }
 ];
 
 @NgModule({

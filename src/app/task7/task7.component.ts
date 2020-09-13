@@ -13,7 +13,7 @@ export class Task7Component implements OnInit {
   repoForm: FormGroup;
 
   constructor(private task7Service: Task7Service, private formBuilder: FormBuilder) {
-    this.repoForm = formBuilder.group({
+    this.repoForm = this.formBuilder.group({
       name: ""
     });
   }
