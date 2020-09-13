@@ -13,6 +13,8 @@ import { Task1Component } from './task1/task1.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Task7Component } from './task7/task7.component';
 import { Task8Component } from './task8/task8.component';
+import { Task9Component } from './task9/task9.component';
+import { Task9distantComponent } from './task9distant/task9distant.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { Task8Component } from './task8/task8.component';
     Task4Component,
     Task1Component,
     Task7Component,
-    Task8Component
+    Task8Component,
+    Task9Component,
+    Task9distantComponent
   ],
   imports: [
     BrowserModule,
