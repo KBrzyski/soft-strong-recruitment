@@ -1,0 +1,20 @@
+<p>1. Wykorzystanie podwójnego wiązania</p>
+
+<select [(ngModel)]="selectedCar">
+    <option *ngFor="let car of cars;" [value]="car.id">{{car.name}}</option>
+</select>
+
+<div id="car-images" [ngSwitch]="selectedCar">
+    <div *ngSwitchCase="1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Polski_Fiat_126p_rocznik_1973.jpg">
+    </div>
+    <div *ngSwitchCase="2">
+        <img src="https://www.autocentrum.pl/ac-file/article/5e41772bc74b353e4742d22e/11-02-1983-stutysieczny-polonez.jpg">
+    </div>
+    <div *ngSwitchCase="3">
+        <img src="https://www.mojehobby.pl/zdjecia/6/7/4/21325_rd.jpg">
+    </div>
+    <div *ngSwitchDefault>
+        <img src="https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InR1OWd4MmFiMXN6azEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.UWG7y1TYSxUI1ADEfy74ntONVEKXYgqCgx-Rl8qKgj4/image;s=1080x720">
+    </div>
+</div>

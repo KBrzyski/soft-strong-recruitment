@@ -9,6 +9,8 @@ import { Task3Component } from './task3/task3.component';
 import { Task6Component } from './task6/task6.component';
 import { ChangeColorDirective } from './task6/change-color.directive';
 import { Task4Component } from './task4/task4.component';
+import { Task1Component } from './task1/task1.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { Task4Component } from './task4/task4.component';
     Task3Component,
     Task6Component,
     ChangeColorDirective,
-    Task4Component
+    Task4Component,
+    Task1Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
