@@ -15,6 +15,7 @@ import { Task7Component } from './task7/task7.component';
 import { Task8Component } from './task8/task8.component';
 import { Task9Component } from './task9/task9.component';
 import { Task9distantComponent } from './task9distant/task9distant.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { Task9distantComponent } from './task9distant/task9distant.component';
     Task7Component,
     Task8Component,
     Task9Component,
-    Task9distantComponent
+    Task9distantComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
