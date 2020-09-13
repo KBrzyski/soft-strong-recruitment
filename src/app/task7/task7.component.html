@@ -1,0 +1,15 @@
+<p>7. implementacja resta (HttpClient) do ogólno dostępnego rest API, np. do githuba</p>
+
+<form [formGroup]="repoForm" (ngSubmit)="onSubmit(repoForm.value.name)">
+    <div>
+        <label for="name">
+          Please type github username (for ex. KBrzyski) and click submit to get user's events
+        </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+    <button class="button" type="submit">Submit</button>  
+</form>
+
+<ul>
+    <li *ngFor="let event of events">id: {{ event.id }}; type: {{ event.type }}; created at: {{ event.created_at }}; repo: {{ event.repo.name }}</li>
+</ul>
